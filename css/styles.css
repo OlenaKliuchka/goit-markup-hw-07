@@ -502,6 +502,7 @@ p {
     padding-top: 16px;
     padding-bottom: 16px;
   }
+
   .advantages {
     flex-wrap: wrap;
     gap: 72px 24px;
@@ -540,9 +541,7 @@ p {
     padding-top: 112px;
     padding-bottom: 112px;
   }
-  .hero-title {
-    margin-bottom: 36px;
-  }
+
   .adv-icon {
     display: none;
   }
