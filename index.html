@@ -37,15 +37,20 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open js-open-menu">
+          <svg class="mobile-menu-open_icon" width="32" height="22">
+            <use href="./images/icon.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
         <!-- Контакти -->
         <address class="tel-email">
           <ul class="tel-email-contacs list">
-            <li class="item">
+            <li class="contacs-item">
               <a href="mailto:info@devstudio.com" class="tel-email-link link"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="item">
+            <li class="contacs-item">
               <a href="tel:+110001111111" class="tel-email-link link"
                 >+11 (000) 111-11-11</a
               >
@@ -53,9 +58,73 @@
           </ul>
         </address>
       </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu-container container">
+          <button type="button" class="mobile-menu_close-btn js-close-menu">
+            <svg class="mobile-menu_close-icon" width="8" height="8">
+              <use href="./images/icon.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <ul class="mobile-nav list">
+            <li class="mobile-nav-item">
+              <a href="./index.html" class="mobile-nav-link current link"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a href="./portfolio.html" class="mobile-nav-link link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a href="" class="mobile-nav-link link">Contacts</a>
+            </li>
+          </ul>
+          <ul class="mobile-tel-email-contacs list">
+            <li class="contacs-item">
+              <a href="tel:+110001111111" class="mobile-tel-link link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="contacs-item">
+              <a href="mailto:info@devstudio.com" class="mobile-email-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-footer-social-list list">
+            <li class="social-list-item">
+              <a href="" class="footer-social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icon.svg#icon-instagram-2"></use></svg
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="footer-social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icon.svg#icon-twitter-1"></use></svg
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="footer-social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icon.svg#icon-facebook-1"></use></svg
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="footer-social-list-link">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/icon.svg#icon-linkedin-1"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
+
     <main>
       <!-- Секція Герой -->
+
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -66,6 +135,7 @@
       </section>
 
       <!-- Секція 1 -->
+
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">advantages Webstudio</h2>
@@ -121,7 +191,9 @@
           </ul>
         </div>
       </section>
+
       <!-- Секція 2 -->
+
       <section class="section-doing">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
@@ -153,13 +225,16 @@
           </ul>
         </div>
       </section>
+
       <!-- Секція 3 -->
+
       <section class="section-team">
         <div class="container">
           <h2 class="section-team-title">Our Team</h2>
           <ul class="sections-team list">
             <li class="section-team-card item">
               <img
+                srcset="./images/Mobile/img@2xMarkGuerrero.jpg 2x"
                 src="./images/mark.jpg"
                 alt="photo mark guerrero"
                 width="264"
@@ -202,9 +277,9 @@
                 </ul>
               </div>
             </li>
-
             <li class="section-team-card item">
               <img
+                srcset="./images/Mobile/img@2xTomFord.jpg 2x"
                 src="./images/tom.jpg"
                 alt="photo tom ford"
                 width="264"
@@ -249,6 +324,7 @@
             </li>
             <li class="section-team-card item">
               <img
+                srcset="./images/Mobile/img@2xCamilaGarcia.jpg 2x"
                 src="./images/camila.jpg"
                 alt="photo camila garcia"
                 width="264"
@@ -293,6 +369,7 @@
             </li>
             <li class="section-team-card item">
               <img
+                srcset="./images/Mobile/img@2xDanielWilson.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="photo daniel wilson"
                 width="264"
@@ -340,6 +417,7 @@
       </section>
 
       <!-- Секція 4 -->
+
       <section class="section">
         <div class="container">
           <h2 class="section-customers-title">Customers</h2>
@@ -529,6 +607,8 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/mobile-menu.js"></script>
 
     <script src="./js/modal.js"></script>
   </body>
