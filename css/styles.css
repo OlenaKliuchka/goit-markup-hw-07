@@ -119,9 +119,8 @@ p {
       visibility var(--transition-duration-and-func);
   }
   .mobile-menu_close-btn {
-    position: absolute;
-    top: 24px;
-    right: 24px;
+    margin-left: auto;
+
     padding: 0;
     display: flex;
     justify-content: center;
@@ -134,11 +133,12 @@ p {
   }
 
   .mobile-menu-container {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     padding-left: 40px;
     padding-right: 35px;
     height: 100%;
-    padding-top: 80px;
+    padding-top: 24px;
     padding-bottom: 40px;
   }
   .mobile-nav-link {
