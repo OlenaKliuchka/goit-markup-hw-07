@@ -137,6 +137,7 @@ p {
     position: relative;
     padding-left: 40px;
     padding-right: 35px;
+    height: 100%;
     padding-top: 80px;
     padding-bottom: 40px;
   }
@@ -159,7 +160,6 @@ p {
 
   .mobile-nav {
     display: block;
-    margin-bottom: 284px;
   }
 
   .mobile-nav-item:not(:last-child),
@@ -186,14 +186,16 @@ p {
   .mobile-email-link:focus {
     color: var(--pressed-state-color);
   }
+
   .mobile-tel-email-contacs {
+    margin-top: auto;
     margin-bottom: 48px;
   }
   .mobile-footer-social-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 56px;
+    gap: 10px 56px;
   }
 
   /* Секція герой */
@@ -498,10 +500,6 @@ p {
   .hero-title {
     margin-bottom: 36px;
   }
-  .tel-email {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
 
   .advantages {
     flex-wrap: wrap;
@@ -515,10 +513,14 @@ p {
     flex-wrap: wrap;
     gap: 72px 24px;
   }
-  .footer-container {
+  .footer-container,
+  .container-customer,
+  .container-team {
+    width: 582px;
+    padding-left: 15px;
+    padding-right: 15px;
     flex-wrap: wrap;
     gap: 74px 24px;
-    padding-left: 108px;
   }
 
   /* Портфоліо */
@@ -652,8 +654,7 @@ p {
   }
   /* Секція 1 */
   .advantages .title,
-  .services-title,
-  .section-team-title-empl {
+  .services-title {
     margin-top: 0;
     margin-bottom: 8px;
     color: var(--title-text-color);
@@ -669,9 +670,7 @@ p {
     width: 264px;
   }
   .section-advantages-text,
-  .section-team-text,
-  .services-text,
-  .footer-text {
+  .services-text {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 16px;
@@ -840,7 +839,15 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-
+.section-team-title-empl {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
 .services-text {
   color: var(--body-text-color);
 }
@@ -866,7 +873,11 @@ p {
 }
 .section-team-text {
   margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -932,7 +943,11 @@ p {
   width: 40px;
   height: 40px;
 }
-
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 .footer-social-list-link:hover,
 .footer-social-list-link:focus {
   background-color: var(--secondary-link-icon-color);
@@ -1247,6 +1262,7 @@ p {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
+  flex-shrink: 0;
 }
 .visually-hidden {
   position: absolute;
